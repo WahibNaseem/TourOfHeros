@@ -1,0 +1,18 @@
+h2{
+  color:#1a508b;
+  font-family: var(--apna-font);
+  font-weight: lighter;
+}
+button.clear{
+  font-family: var(--apna-font);
+  color: #333;
+  background-color: #eee;
+  margin-bottom: 0.75em;
+  border:none;
+  padding: .3125em .3125em;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #cfd8dc;
+}

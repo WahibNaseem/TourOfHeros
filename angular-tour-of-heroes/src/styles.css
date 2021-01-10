@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ /*Application Wide Styles*/
+
+ element{
+   --apna-font: 'Montserrat'
+ }
+ h1{
+   color:#369;
+   font-family: var(--apna-font);
+   font-size: 250%;
+ }
+ h2, h3{
+   color:#444;
+   font-family: var(--apna-font);
+   font-weight: lighter;
+ }
+ body{
+   margin:2em;
+ }
+
+ body, input[type="text"], button{
+   color: #333;
+   font-family: var(--apna-font);
+ }
+ /* elsewhere else*/
+ *{
+   font-family: var(--apna-font);
+ }
