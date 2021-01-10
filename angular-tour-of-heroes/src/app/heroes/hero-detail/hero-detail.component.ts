@@ -10,8 +10,10 @@ import { HeroService } from 'src/app/services/hero.service';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  @Input() hero!: Hero;
+  // @Input() hero!: Hero;
+  hero!: Hero;
   txtGoBack = "go back";
+  txtSave = "Save";
   constructor(private heroService: HeroService, 
               private location: Location,
                private route: ActivatedRoute) { }
@@ -27,6 +29,11 @@ export class HeroDetailComponent implements OnInit {
 
   goBack() {
     this.location.back();
+  }
+
+  save(){
+    console.log('Saving...');
+    this.heroService.updateHero(this.hero)
   }
 
 }
