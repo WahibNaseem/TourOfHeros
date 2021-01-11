@@ -58,11 +58,10 @@ export class HeroService {
               tap(_ => this.log(`Updated hero id = ${hero.id}`)),
               catchError(this.handleError<any>('UpdateHero'))
             );
-    
   }
 
   /** Log a HeroService message with the MessageService */
-  private log(message: string) {
+  private log(message: string): void {
     this.messageSerice.add(message);
   }
 

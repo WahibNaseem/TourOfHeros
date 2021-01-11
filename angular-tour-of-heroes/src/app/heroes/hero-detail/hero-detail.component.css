@@ -1,10 +1,10 @@
 /* HeroDetailComponent's private CSS styles */
 
 label {
-  display:inline-block;
+  display: inline-block;
   width: 3em;
-  margin:0.5em 0;
-  color: #607D8B;
+  margin: 0.5em 0;
+  color: #607d8b;
   font-weight: bold;
 }
 input {
@@ -12,21 +12,21 @@ input {
   font-size: 1em;
   padding-left: 0.4em;
 }
-button{
+button {
   margin: 1.25em 14em;
   font-family: var(--apna-font);
   background-color: #eee;
   border: none;
-  padding:0.3125em 0.625em;
+  padding: 0.3125em 0.625em;
   border-radius: 0.25em;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #cfd8dc;
 }
-button:disabled{
+button:disabled {
   background-color: #eee;
-  color:#ccc;
+  color: #ccc;
   cursor: auto;
 }

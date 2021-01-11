@@ -12,26 +12,26 @@ import { MessageService } from 'src/app/services/message.service';
 export class HeroesComponent implements OnInit {
   title = 'Honourable Names of Country Heroes';
   txtMessage = 'Heroes Component: Selected hero id = ';
- 
-  heroes! : Hero[];
 
- /* selectedHero!: Hero;*/
+  heroes!: Hero[];
 
-  constructor(private heroService: HeroService, private messageService: MessageService) {    
-   }
+  /* selectedHero!: Hero;*/
+
+  constructor(private heroService: HeroService, private messageService: MessageService) {
+  }
 
   ngOnInit(): void {
     this.getHeroes();
   }
 
- /* onSelect(hero:Hero): void {
-    this.selectedHero = hero; 
-    this.messageService.add(this.txtMessage + hero.id);   
-  }
-  */
+  /* onSelect(hero:Hero): void {
+     this.selectedHero = hero;
+     this.messageService.add(this.txtMessage + hero.id);
+   }
+   */
 
-  getHeroes(): void{
-  this.heroService.getHeroes().subscribe(resp => this.heroes = resp);
+  getHeroes(): void {
+    this.heroService.getHeroes().subscribe(resp => this.heroes = resp);
   }
 
 }
